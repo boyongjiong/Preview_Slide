@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Preview Slide</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!-- 头部区域 -->
+	<header>
+		<nav class="navBar">
+			<div class="logo"><a href="#">The Mind Map Book</a></div>
+			<ul>
+				<li><a href="#">LETTER FROM TONY BUZAN</a></li>
+				<li><a href="#">INVENTOR OF MIND MAPS</a></li>
+			</ul>
+		</nav>
+		<div id="banner">
+			<h1>The Relentless Pursuit of Perfection</h1>
+		</div>
+	</header>
+	<!-- 幻灯片展示区域 -->
+	<div class="slider">
+		<!-- 0.修改 VIEW->TEMPLATE (关键字替换 增加template ID) -->
+		<div class="main" id="template-main">
+			<div class="main-i {{css}}" id="main-{{index}}">
+				<div class="caption">
+					<h2>{{h2}}</h2>
+					<h3>{{h3}}</h3>
+				</div>
+				<img class="picture" src="img/{{index}}.jpg" alt="the index picture">
+			</div>	
+		</div>
+		<div class="ctrl" id="template-ctrl">
+			<a class="ctrl-i" id="ctrl-{{index}}" href="javascript:switchSlider({{index}});" >
+				<img src="img/{{index}}.jpg" alt="">
+			</a>
+		</div>
+	</div>
+	<!-- 主体内容区域 -->
+	<div class="content">
+		<p>Demo1 | Demo2(with autoplay)</p>
+		<p>Resize the window to see the slider adjusting</p>
+	</div>
+	<!-- 页脚部分 -->
+	<footer></footer>
+	<script src="js/myscript.js"></script>
+</body>
+</html>
