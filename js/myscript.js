@@ -97,6 +97,20 @@
 		addSliders();
 		switchSlider(1);
 		setTimeout(function(){
-			movePictures();
-		},100)
+		movePictures();
+		},100);
 	}
+
+	//弹性最佳方案：addLoadEvent函数 唯一的参数是打算在页面加载完毕执行函数的名字
+	// function addLoadEvent(func){
+	// 	var oldonload = window.onload;
+	// 	if(typeof window.onload != "function"){
+	// 		window.onload = func;
+	// 	}
+	// 	else{
+	// 		window.onload = function(){
+	// 			oldonload();
+	// 			func();
+	// 		}
+	// 	}
+	// }
